@@ -1,7 +1,7 @@
 ## :sunrise_over_mountains: 
 __Very in progress__
 
-A python notebook to do solar irradiance and sky view analysis taking into account terrain shading. Takes a point and a dem as input.
+A python project to do solar irradiance and sky view analysis taking into account terrain shading. Takes a point and a dem as input.
 
  Resources:
 - http://www.solar.udel.edu/ELEG620/02_Solar_radiation09.pdf
