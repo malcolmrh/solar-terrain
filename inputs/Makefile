@@ -1,0 +1,18 @@
+all: dem/merged.tif
+
+dem/48_10_2_1_5m_v2.0.tar:
+	curl -o $@ 'http://data.pgc.umn.edu/elev/dem/setsm/ArcticDEM/mosaic/v2.0/48_10/48_10_2_1_5m_v2.0.tar'
+
+dem/48_10_2_2_5m_v2.0.tar:
+	curl -o $@ 'http://data.pgc.umn.edu/elev/dem/setsm/ArcticDEM/mosaic/v2.0/48_10/48_10_2_2_5m_v2.0.tar'
+
+dem/48_10_2_1_5m_v2.0_reg_dem.tif: dem/48_10_2_1_5m_v2.0.tar
+	tar -xvf $^ $@
+	touch $@
+
+dem/48_10_2_2_5m_v2.0_reg_dem.tif: dem/48_10_2_2_5m_v2.0.tar
+	tar -xvf $^ $@
+	touch $@
+
+dem/merged.tif: dem/48_10_2_1_5m_v2.0_reg_dem.tif dem/48_10_2_2_5m_v2.0_reg_dem.tif
+	gdal_merge.py -o $@ $^
