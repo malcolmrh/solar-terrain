@@ -1,0 +1,11 @@
+name: solar-terrain-env
+channels: !!python/tuple
+- conda-forge
+- defaults
+dependencies:
+- python=3.6
+- ephem=3.7.6.0
+- numpy
+- pandas
+- jupyter
+- shapely
