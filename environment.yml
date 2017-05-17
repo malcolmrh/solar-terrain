@@ -8,4 +8,10 @@ dependencies:
 - numpy
 - pandas
 - jupyter
+- fiona
 - shapely
+- gdal
+- matplotlib
+- pillow
+- basemap
+- altair

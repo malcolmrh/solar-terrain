@@ -2,6 +2,7 @@
 *.DS_Store
 ._*
 *.tif
+*.xyz
 *.tar
 *.zip
 *.aux.xml
