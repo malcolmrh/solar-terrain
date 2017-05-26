@@ -13,6 +13,5 @@ dependencies:
 - gdal
 - matplotlib
 - pillow
-- basemap
-- altair
 - datetime
+- altair
