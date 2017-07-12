@@ -14,4 +14,3 @@ dependencies:
 - matplotlib
 - pillow
 - datetime
-- altair
